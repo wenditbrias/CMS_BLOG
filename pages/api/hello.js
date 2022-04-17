@@ -1,5 +1,10 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+const mongoose = require('mongoose');
+const uri = `mongodb://127.0.0.1:27017/local`;
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+
+const index = async (req,res) => {
+  res.send('peterparker');
 }
+
+export default index;
